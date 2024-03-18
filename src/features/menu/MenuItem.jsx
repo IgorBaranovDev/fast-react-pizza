@@ -3,9 +3,10 @@ import { useDispatch } from 'react-redux';
 import Button from '../../ui/Button';
 import { formatCurrency } from '../../utils/helpers';
 import { addItem } from '../cart/cartSlice';
+import { getUserName } from '../user/userSlice';
 
 function MenuItem({ pizza }) {
-  const dispatch = useDispatch();
+  const dispatch = useDispatch(getUserName());
 
   const { id, name, unitPrice, ingredients, soldOut, imageUrl } = pizza;
 
