@@ -4,7 +4,7 @@ import Button from '../ui/Button';
 import CreateUser from '../features/user/CreateUser';
 
 function Home() {
-  const username = useSelector(getUserName());
+  const username = useSelector(getUserName);
 
   return (
     <div className="my-10 px-4 text-center sm:my-16">

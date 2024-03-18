@@ -36,7 +36,7 @@ const fakeCart = [
 ];
 
 function CreateOrder() {
-  const username = useSelector(getUserName());
+  const username = useSelector(getUserName);
   const navigation = useNavigation();
   const isSubmiting = navigation.state === 'submitting';
 
