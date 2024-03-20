@@ -4,7 +4,6 @@ import LinkButton from './LinkButton';
 
 function Error() {
   const error = useRouteError();
-  console.log(error);
 
   return (
     <div>
